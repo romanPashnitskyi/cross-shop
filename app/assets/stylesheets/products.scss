@@ -2,22 +2,35 @@
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .products {
+  h1 {
+    margin: 0;
+    padding-bottom: 0.2em;
+    padding-top: 0.2em;
+    font:  300% sans-serif;
+    font-weight: bolder;
+    background-color: powderblue;
+    text-align: center;
+    box-shadow: 0 0 5px #3b434b;
+  }
+
   table {
     border-collapse: collapse;
   }
 
   table tr td {
-    padding: 5px;
+    padding: 7px;
     vertical-align: top;
   }
 
   .list_image {
-    width: 60px;
-    height: 70px;
+    width: 120px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    position: relative;
   }
 
   .list_description {
-    width: 60%;
+    width: 100%;
 
     dl {
       margin: 0;
@@ -30,7 +43,7 @@
     }
 
     dd {
-      margin: 0;
+      margin: 10px;
     }
   }
 
@@ -41,10 +54,10 @@
   }
 
   .list_line_even {
-    background: #e0f8f8;
+    background: #ebf5fb;
   }
 
   .list_line_odd {
-    background: #f8b0f8;
+    background: #aed6f1;
   }
 }

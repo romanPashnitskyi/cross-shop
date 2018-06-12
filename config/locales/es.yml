@@ -3,10 +3,7 @@ es:
   layouts:
     application:
       title:       "Biblioteca de Pragmatic"
-      home:        "Inicio"
-      questions:   "Preguntas"
-      news:        "Noticias"
-      contact:     "Contacto"
+      catalog:        "Inicio"
 
   store:
       index:

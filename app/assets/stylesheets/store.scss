@@ -4,21 +4,24 @@
 .store {
   h1 {
     margin: 0;
-    padding-bottom: 0.5em;
-    font:  150% sans-serif;
-    color: #226;
-    border-bottom: 3px dotted #77d;
+    padding-bottom: 0.2em;
+    padding-top: 0.2em;
+    font:  300% sans-serif;
+    font-weight: bolder;
+    background-color: powderblue;
+    text-align: center;
+    box-shadow: 0 0 5px #3b434b;
   }
 
   /* An entry in the store catalog */
   .entry {
     overflow: auto;
     margin-top: 1em;
-    border-bottom: 1px dotted #77d;
-    min-height: 100px;
+    border-bottom: 4px ridge LightSEAGreen;
+    min-height: 120px;
 
     img {
-      width: 80px;
+      width: 120px;
       margin-right: 5px;
       margin-bottom: 5px;
       position: absolute;
@@ -27,26 +30,50 @@
     h3 {
       font-size: 120%;
       font-family: sans-serif;
-      margin-left: 100px;
+      margin-left: 140px;
       margin-top: 0;
       margin-bottom: 2px;
-      color: #227;
+      color: #21618c;
     }
 
     p, div.price_line {
-      margin-left: 100px;
+      margin-left: 140px;
       margin-top: 0.5em;
       margin-bottom: 0.8em;
 
       form, div {
         display: inline;
       }
+      input[type="submit"] {
+        display: inline-block;
+        padding: 5px 15px;
+        font-size: 14px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #008CBA;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 5px #999;
+      }
+      input[type="submit"]:hover {
+        background-color: #154360;
+      }
+      input[type="submit"]:active {
+        background-color: #154360;
+        box-shadow: 0 3px #666;
+        transform: translateY(4px);
+      }
     }
 
     .price {
       color: #44a;
+      font-size: large;
       font-weight: bold;
       margin-right: 3em;
     }
+
   }
 }

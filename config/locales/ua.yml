@@ -1,0 +1,78 @@
+ua:
+
+  layouts:
+    application:
+      title:                "Cross-Shop"
+      catalog:              "Каталог"
+      login:                "Увійти"
+
+  store:
+      index:
+        title_html:         "Каталог"
+        add_html:           "Купити"
+
+  carts:
+      cart:
+        title:              "Корзина"
+        empty:              "Очистити"
+        checkout:           "Замовити"
+
+  number:
+      currency:
+        format:
+          unit:             "$"
+          precision:        2
+          separator:        "."
+          delimiter:        ","
+          format:           "%u%n"
+
+  orders:
+      new:
+        legend:             "Контактні дані"
+      form:
+        name:               "Ім'я"
+        address_html:       "Адрес"
+        email:              "Електронна пошта"
+        pay_type:           "Форма оплати"
+        pay_prompt_html:    "Виберіть метод оплати"
+        submit:             "Зробити замовлення"
+        pay_types:
+          check:            "Готівкою"
+          credit_card:      "Кредитною картою"
+          purchase_order:   "Після отримання отвару"
+
+  activerecord:
+      errors:
+        messages:
+          inclusion:        "- не вибрали спосіб оплати"
+          blank:            "не заповнили"
+      models:
+          order:            "замовлення"
+      attributes:
+          order:
+            address:        "Адрес"
+            name:           "Ім'я"
+            email:          "Електронну пошту"
+            pay_type:       "Форма оплати"
+  errors:
+      template:
+        body:               ""
+        header:
+          one:              "1 помилка забороняє прийняти це замовлення."
+          other:            "%{count} помилки забороняють прийняти це замовлення."
+
+  thanks:                   "Дякуєм за Ваше замовлення"
+
+
+
+
+
+
+
+
+
+
+
+
+
+

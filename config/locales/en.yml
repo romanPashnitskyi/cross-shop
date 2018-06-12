@@ -23,20 +23,18 @@ en:
 
   layouts:
     application:
-      title:       "The Pragmatic Bookshelf"
-      home:        "Home"
-      questions:   "Questions"
-      news:        "News"
-      contact:     "Contact"
+      title:       "Cross-Shop"
+      catalog:        "Catalog"
+      login:          "Log in"
 
   store:
       index:
-        title_html:  "Your Pragmatic Catalog"
+        title_html:  "Catalog"
         add_html:    "Add to Cart"
 
   carts:
       cart:
-        title:       "Your Cart"
+        title:       "Cart"
         empty:       "Empty cart"
         checkout:    "Checkout"
 
@@ -60,11 +58,19 @@ en:
         pay_prompt_html: "Select a payment method"
         submit:       "Place Order"
         pay_types:
-                check:           "Check"
-                credit_card:     "Credit Card"
-                purchase_order:  "Purchase Order"
+          check:           "Check"
+          credit_card:     "Credit Card"
+          purchase_order:  "Purchase Order"
 
-  thanks: "Thank you for your order"
+  errors:
+    template:
+      body:               ""
+      header:
+        one:              "1 error prohibited this order from being saved."
+        other:            "%{count} errors prohibited this order from being saved."
+
+
+  thanks:                     "Thank you for your order"
 
 
 

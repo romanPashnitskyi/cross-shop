@@ -17,19 +17,20 @@ body, body > p, body > ol, body > ul, body > td {margin: 8px !important}
 
 #banner {
   position: relative;
-  min-height: 40px;
-  background: #9c9;
+  min-height: 70px;
+  background-color: darkcyan;
   padding: 10px;
-  border-bottom: 2px solid;
+  border-bottom: 5px solid LightSeaGreen;
   font: small-caps 40px/40px "Times New Roman", serif;
   color: #282;
   text-align: center;
+  box-shadow: 0 0 10px #3b434b;
 
   img {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 192px;
+    top: 9px;
+    left: 15px;
+    width: 160px;
   }
 }
 
@@ -37,9 +38,10 @@ body, body > p, body > ol, body > ul, body > td {margin: 8px !important}
   color: #000 !important;
   border: 2px solid red;
   padding: 1em;
-  margin-bottom: 2em;
+  text-align: center;
+  margin: 1em 10em 1em 10em;
   background-color: #f0f0f0;
-  font: bold smaller sans-serif;
+  font: bold small sans-serif;
 }
 
 #notice:empty {
@@ -48,33 +50,56 @@ body, body > p, body > ol, body > ul, body > td {margin: 8px !important}
 
 #columns {
   background: #141;
+  box-shadow: 0 0 10px #3b434b;
   display: flex;
 
   #main {
     padding: 1em;
     background: white;
+    box-shadow: 0 0 10px #3b434b;
     flex: 1;
   }
 
   #side {
     padding: 1em 2em;
-    background: #141;
+    background: #0b5345;
+    box-shadow: 0 0 10px #3b434b;
 
     form, div {
       display: inline;
     }
 
-    input {
-      font-size: small;
+    input[type="submit"] {
+      display: inline-block;
+      padding: 5px 15px;
+      font-size: 14px;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      color: #fff;
+      background-color: #008CBA;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 5px #999;
+    }
+    input[type="submit"]:hover {
+      background-color: #154360;
+    }
+    input[type="submit"]:active {
+      background-color: #154360;
+      box-shadow: 0 3px #666;
+      transform: translateY(4px);
     }
 
     #cart {
-      font-size: smaller;
+      font-size: large;
+      text-align: center;
       color:     white;
 
       table {
-        border-top:    1px dotted #595;
-        border-bottom: 1px dotted #595;
+        border-top:    1px dotted Aqua;
+        border-bottom: 1px dotted Aqua;
         margin-bottom: 10px;
       }
     }
@@ -87,11 +112,21 @@ body, body > p, body > ol, body > ul, body > td {margin: 8px !important}
 
         a {
           color: #bfb;
-          font-size: small;
+          font-size:large;
         }
       }
     }
   }
+}
+
+p {
+  font-family:'Verdana', 'Arial', 'Helvetica', sans-serif;
+  font-size:13px;
+  color:#000000;
+  letter-spacing:1px;
+  font-style: normal;
+  text-align:justify;
+  text-indent:8px;
 }
 
 @media all and (max-width: 800px) {
@@ -111,39 +146,120 @@ body, body > p, body > ol, body > ul, body > td {margin: 8px !important}
 }
 
 .depot_form {
+  body {font-family: Arial, Helvetica, sans-serif;}
+  padding: 1em 20em;
+  margin-top: 2em;
+  margin-bottom: 16em;
+
   fieldset {
     background: #efe;
     legend {
       color: #dfd;
-      background: #141;
+      background: #0b5345;
       font-family: sans-serif;
       padding: 0.2em 1em;
+      font-size: 1.4em;
+      line-height: 1.41em;
     }
     div {
       margin-bottom: 0.3em;
     }
   }
-  form {
+
+  h1 {
+    font-size: 1.99em;
+    line-height: 1.41em;
+    margin-bottom: 0.5em;
+    padding: 0;
+  }
+
+  input, textarea, select, option {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  label {
+    padding: 0.1em 0;
+  }
+  input[type="submit"] {
+    display: inline-block;
+    padding: 5px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #008CBA;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+  }
+  input[type="submit"]:hover {
+    background-color: #154360;
+  }
+  input[type="submit"]:active {
+    background-color: #154360;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+  }
+  // Also, clean up the error styling
+  #error_explanation {
+    background-color: white;
+    border-radius: 1em;
+    border: solid thin red;
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    width: 95%;
+    h2 {
+      background: none;
+      color: red;
+      font-size: 1.41em;
+      line-height: 1.41em;
+      padding: 1em;
+    }
+    ul {
+      margin-top: 0;
+      li {
+        color: red;
+        font-size: 1em;
+      }
+    }
+  }
+  .field_with_errors {
+    background: none;
+    color: red;
+    width: 95%;
     label {
-      width: 5em;
-      float: left;
-      text-align: right;
-      padding-top: 0.2em;
-      margin-right: 0.1em;
-      display: block;
+      font-weight: bold;
     }
-    select, textarea, input {
-      margin-left: 0.5em;
+    label::before {
+      content: "! ";
     }
-    .submit {
-      margin-left: 4em;
-    }
-    br {
-      display: none
+    input,textarea {
+      background: #f1948a;
     }
   }
 }
+
 .locale {
   float: right;
-  margin: -0.25em 0.1em;
+
+  select {
+    padding: 1px 70px 3px 10px;
+    font-size: large;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    background: url(https://cdn1.iconfinder.com/data/icons/google_jfk_icons_by_carlosjj/512/translate.png) 96% / 15% no-repeat #eaf2f8;
+  }
+
 }
+
+
+
