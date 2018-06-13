@@ -1,4 +1,4 @@
-  #---
+#---
 # Excerpted from "Agile Web Development with Rails 5",
 # published by The Pragmatic Bookshelf.
 # Copyrights apply to this code. It may not be used to create training material,
@@ -8,16 +8,21 @@
 #---
 # encoding: utf-8
 
-Product.create!(title: 'ADIDAS GAZELLE',
+Product.create!(title: 'Rails, Angular, Postgres, and Bootstrap',
   description:
-    %{ <p><em>ADIDAS GAZELLE </em></p><p>Ultimate simplicity for three decades
-       and counting. This men's version of the Gazelle honors the favorite version
-       of 1991, with the same materials, colors, textures and proportions as the
-       original. The leather upper features contrast 3-Stripes and heel tab that
-       echo the early-'90s style.
-       </p>},
-  image_url: 'adidas_gazelle.jpg',
-  price: 80)
+    %{<p>
+      <em>Powerful, Effective, and Efficient Full-Stack Web Development</em>
+      As a Rails developer, you care about user experience and performance,
+      but you also want simple and maintainable code. Achieve all that by
+      embracing the full stack of web development, from styling with
+      Bootstrap, building an interactive user interface with AngularJS, to
+      storing data quickly and reliably in PostgreSQL. Take a holistic view of
+      full-stack development to create usable, high-performing applications,
+      and learn to use these technologies effectively in a Ruby on Rails
+      environment.
+      </p>},
+  image_url: 'dcbang.jpg',
+  price: 45.00)
 # . . .
 Product.create!(title: 'Seven Mobile Apps in Seven Weeks',
   description:
